@@ -1,0 +1,13 @@
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\bin\Debug\netcoreapp2.1\VehicleAPI.deps.json
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\bin\Debug\netcoreapp2.1\VehicleAPI.runtimeconfig.json
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\bin\Debug\netcoreapp2.1\VehicleAPI.runtimeconfig.dev.json
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\bin\Debug\netcoreapp2.1\VehicleAPI.dll
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\bin\Debug\netcoreapp2.1\VehicleAPI.pdb
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.csproj.CoreCompileInputs.cache
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.RazorAssemblyInfo.cache
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.RazorAssemblyInfo.cs
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.AssemblyInfoInputs.cache
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.AssemblyInfo.cs
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.RazorTargetAssemblyInfo.cache
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.dll
+E:\_MyData\Projects\R&D\BH\VehicleAPI\VehicleAPI\obj\Debug\netcoreapp2.1\VehicleAPI.pdb

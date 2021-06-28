@@ -1,0 +1,23 @@
+<table class="table table-hover">
+  <tr>
+    <td>VIN</td>
+    <td>Vehicle Maker</td>
+    <td>Vehicle Model</td>
+    <td>Inspection Date</td>
+    <td>Inspector Name</td>
+    <td>Inspection Location</td>
+    <td>Inspection Status</td>
+  </tr>
+  <tr *ngFor="let vd of service.list">
+    <td (click)="populateForm(vd);service.isAdd=false;">{{vd.VIN}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{getMakerName(vd.VehicleMaker)}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{vd.VehicleModel}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{formatDateTime(vd.InspectionDate)}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{vd.InspectorName}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{vd.InspectionLocation}}</td>
+    <td (click)="populateForm(vd);service.isAdd=false;">{{convertStatus(vd.InspectionStatus)}}</td>
+    <td>
+      <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(vd.VIN)"></i>
+    </td>
+  </tr>
+</table>

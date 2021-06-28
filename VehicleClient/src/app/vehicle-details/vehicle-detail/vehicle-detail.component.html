@@ -1,0 +1,64 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="VIN" [value]="service.formData.VIN">
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">VIN #</label>
+    <div class="col-sm-8">
+      <input name="VIN" #VIN="ngModel" [(ngModel)]="service.formData.VIN" 
+      class="form-control" placeholder="Enter VIN #" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Vehicle Maker</label>
+    <div class="col-sm-8">
+      <select class="form-control" (change)="getMakerID($event.target.selectedIndex)">
+        <option>SELECT</option>
+        <option *ngFor="let maker of service.makerList" [ngValue]="maker.Maker_ID"
+        [selected]="maker.Maker_ID === service.formData.VehicleMaker">
+          {{maker.Maker_Name}}
+        </option>
+      </select>
+    </div>
+  </div>  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Vehicle Model</label>
+    <div class="col-sm-8">
+      <input name="VehicleModel" #VehicleModel="ngModel" [(ngModel)]="service.formData.VehicleModel" 
+      class="form-control" placeholder="Enter Vehicle Model">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Inspection Date</label>
+    <div class="col-sm-2">
+      <ejs-datepicker id="datepicker" name="InspectionDate" #InspectionDate="ngModel" [(ngModel)]='service.formData.InspectionDate' width="230px" [max]='today' format ='MM-dd-yyyy'></ejs-datepicker>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Inspector Name</label>
+    <div class="col-sm-8">
+      <input name="InspectorName" #InspectorName="ngModel" [(ngModel)]="service.formData.InspectorName" 
+      class="form-control" placeholder="Enter Inspection Name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Location</label>
+    <div class="col-sm-8">
+      <input name="InspectionLocation" #InspectionLocation="ngModel" [(ngModel)]="service.formData.InspectionLocation" 
+      class="form-control" placeholder="Enter Inspection Location">
+    </div>
+  </div>
+  <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Is Pass?</label>
+      <div class="col-sm-8">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" class="form-check-input" name="InspectionStatus" #InspectionStatus="ngModel" [(ngModel)]="service.formData.InspectionStatus">  
+      </div>    
+  </div>  
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Notes</label>
+    <div class="col-sm-8">
+      <textarea name="InspectionNotes" class="form-control" #InspectionNotes="ngModel" [(ngModel)]="service.formData.InspectionNotes" placeholder="Enter Comments"></textarea>
+    </div>
+  </div>  
+  <div class="form-group col-sm-10">
+    <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid">Submit</button>
+  </div>
+</form>
